@@ -1,6 +1,41 @@
 @use '../abstract' as a;
 
-h1, h2, h3, h4,
-h5, h6, p {
+h1, h2, h3,
+p, li, a {
+  font-family: 'Karla', sans-serif;
+}
 
+h1 {
+  font-size: 1.3rem;
+  color: var(--clr-primary-color-cyan);
+
+  @include a.breakpoint(medium) {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.25rem;
+  }
+}
+
+p, li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  @include a.breakpoint(medium) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+  color: var(--clr-neutral-color-light-gray);
 }

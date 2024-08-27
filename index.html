@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="keywords" content="keyword"> -->
-    <!--     <meta name="description" content="description"> -->
+    <meta name="title" content="Coding Tutorial Price Card">
+    <meta name="description" content="Contain the details about a membership along with the cost of the membership.">
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+    <article class="price-card">
+        <header class="price-card__header">
+            <h1>Join our community</h1>
+            <h2 class="price-card__sub-header">30-day, hassle-free money back guarantee</h2>
+            <p>Gain access to our full library of tutorials along with expert code reviews.
+                Perfect for any developers who are serious about honing their skills.</p>
+        </header>
 
-    <script src="assets/scripts/index.js"></script>
+        <section class="price-card__subscription">
+            <h2>Monthly Subscription</h2>
+            <div>
+                <p class="price-card__rate"><span class="price-card__cost">&dollar;29</span> per month</p>
+                <p>Full access for less than &dollar;1 a day</p>
+            </div>
+
+            <a class="button">Sign Up</a>
+        </section>
+
+        <footer class="price-card__footer">
+            <h2>Why Us</h2>
+
+            <ul>
+                <li>Tutorials by industry experts</li>
+                <li>Peer &amp; expert code review</li>
+                <li>Coding exercises</li>
+                <li>Access to our GitHub repos</li>
+                <li>Community forum</li>
+                <li>Flashcard decks</li>
+                <li>New videos every week</li>
+            </ul>
+        </footer>
+    </article>
 </body>
 </html>

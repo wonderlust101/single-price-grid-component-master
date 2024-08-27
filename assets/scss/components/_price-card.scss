@@ -1,0 +1,57 @@
+@use  '../abstract' as a;
+
+.price-card {
+  display: grid;
+  @include a.set-grid-areas(header, rate, footer);
+  width: min(90%, 50rem);
+  overflow: hidden;
+  border-radius: 0.5rem;
+
+  @include a.breakpoint(medium) {
+    grid-template:
+            'header header'
+            'rate footer' / 1fr 1fr;
+  }
+
+  & > * {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.75rem;
+
+    @include a.breakpoint(medium) {
+      padding: 2.5rem;
+    }
+  }
+
+  &__header {
+    background-color: var(--clr-white);
+    color: var(--clr-neutral-color-grayish-blue);
+  }
+
+  &__sub-header {
+    color: var(--clr-primary-color-bright-yellow);
+  }
+
+  &__subscription {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-color-cyan);
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-neutral-color-light-gray);
+  }
+
+  &__cost {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-white);
+  }
+
+  &__footer {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-color-bright-cyan);
+  }
+}
